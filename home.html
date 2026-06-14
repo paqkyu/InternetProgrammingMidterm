@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>StefGym</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/home.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="javascript/javascript.js" defer></script>
+    </head>
+    <body class="stefgym-body">
+
+        <nav class="navbar navbar-expand-lg navbar-dark stef-navbar sticky-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="home.html">
+                    <div class="brand-mark">S</div>
+                    <span class="ms-2">StefGym</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tasks.html">Programs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#trainers">Trainers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-light rounded-pill ms-lg-3" href="#join">Join Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header class="hero-section text-white text-center d-flex align-items-center">
+            <div class="container">
+                <div class="hero-copy mx-auto">
+                    <p class="eyebrow text-uppercase mb-3">Train hard. Live strong.</p>
+                    <h1 class="display-4 fw-bold mb-4">Welcome to StefGym</h1>
+                    <p class="lead mb-4">A modern gym built for strength, endurance, and the motivation you need to reach your next goal.</p>
+                    <a class="btn btn-primary btn-lg me-2" href="#programs">Explore Programs</a>
+                    <a class="btn btn-outline-light btn-lg" href="#join">Start Free Trial</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="container services-section py-5" id="programs">
+            <div class="row align-items-center gx-5">
+                <div class="col-lg-6">
+                    <h2>Fitness programs made for you</h2>
+                    <p>StefGym offers tailored training plans, expert coaching, and recovery tools so you can build confidence and stay motivated through every workout.</p>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i>Strength & hypertrophy coaching</li>
+                        <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i>Cardio endurance sessions</li>
+                        <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i>Nutrition guidance and habit support</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="feature-card rounded-4 shadow-sm p-4">
+                        <h3 class="mb-3">Limited time intro offer</h3>
+                        <p>Join now and get your first personal training session free, plus a custom plan crafted for your goals.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <span class="badge bg-primary">Starter Pack</span>
+                            <strong>Claim your free session</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-dark text-white">
+            <div class="container">
+                <h2 class="text-center mb-4">Signature classes</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 bg-secondary border-0 shadow-sm text-white">
+                            <div class="card-body">
+                                <div class="icon-circle mb-3"><i class="bi bi-bar-chart-line-fill"></i></div>
+                                <h5 class="card-title">Strength Training</h5>
+                                <p class="card-text">Build power with progressive lifts, guided form coaching, and strength-focused training blocks.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 bg-secondary border-0 shadow-sm text-white">
+                            <div class="card-body">
+                                <div class="icon-circle mb-3"><i class="bi bi-lightning-charge-fill"></i></div>
+                                <h5 class="card-title">HIIT & Conditioning</h5>
+                                <p class="card-text">High-energy circuits and interval training designed to improve stamina and burn calories fast.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 bg-secondary border-0 shadow-sm text-white">
+                            <div class="card-body">
+                                <div class="icon-circle mb-3"><i class="bi bi-heart-pulse-fill"></i></div>
+                                <h5 class="card-title">Recovery & Mobility</h5>
+                                <p class="card-text">Restore your body with mobility drills, stretching sessions, and guided recovery routines.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container py-5" id="trainers">
+            <h2 class="text-center mb-4">Meet our coaches</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial p-4 rounded-4 shadow-sm">
+                        <p>"StefGym helped me find a plan that fits my lifestyle and keeps me consistent every week."</p>
+                        <div class="testimonial-author">— Alex, Member</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial p-4 rounded-4 shadow-sm">
+                        <p>"The trainers are supportive, knowledgeable, and always ready to help me push toward my next milestone."</p>
+                        <div class="testimonial-author">— Nora, Member</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial p-4 rounded-4 shadow-sm">
+                        <p>"Every workout feels challenging and energizing thanks to the gym's motivating atmosphere."</p>
+                        <div class="testimonial-author">— Jaden, Member</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote-section py-5 bg-secondary text-white text-center">
+            <div class="container">
+                <h2 class="mb-4">Motivation for today</h2>
+                <blockquote id="quote" class="fs-4 fst-italic">Loading quote...</blockquote>
+                <p id="author" class="mb-4"></p>
+                <button id="new-quote" class="btn btn-outline-light btn-lg">New quote</button>
+            </div>
+        </section>
+
+        <section class="cta-section text-center text-white py-5" id="join">
+            <div class="container">
+                <h2>Ready to level up?</h2>
+                <p class="mb-4">Join StefGym and take your training to the next level with expert support and a strong community.</p>
+                <a class="btn btn-primary btn-lg" href="#contact">Book a free intro</a>
+            </div>
+        </section>
+
+        <footer class="footer py-4" id="contact">
+            <div class="container text-center text-muted">
+                <p class="mb-1">StefGym • Fitness studio for strength, endurance, and wellness</p>
+                <p class="small mb-0">&copy; 2026 StefGym</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+</html>
