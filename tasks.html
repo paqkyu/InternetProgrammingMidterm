@@ -6,13 +6,13 @@
     <title>StefGym - Programs</title>
     <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel = "stylesheet" integrity = "sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin = "anonymous">
     <link href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel = "stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <link rel = "stylesheet" href = "css/body.css">
     <link rel = "stylesheet" href = "css/navbar.css">
     <link rel= "stylesheet" href="css/tasks.css">
     <script src = "https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src = "javascript/tasks.js" defer></script>
 </head>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 <body class="stefgym-body">
 <!-- navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark stef-navbar sticky-top">
@@ -34,13 +34,13 @@
                             <a class="nav-link" href="tasks.html">Programs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#trainers">Trainers</a>
+                            <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn btn-outline-light rounded-pill ms-lg-3" href="#join">Join Now</a>
+                            <a class="btn btn-outline-light rounded-pill ms-lg-3" href="report.html">Report</a>
                         </li>
                     </ul>
                 </div>
@@ -82,7 +82,7 @@
             <form id="taskForm" class="row g-3">
                 <div class="col-md-6">
                     <label for="taskName" class="form-label"> Task Name</label>
-                    <input type="text" id="taskName" class="form-control" placeholder="e.g organize dumbbell rack">
+                    <input type="text" id="taskName" class="form-control" maxlength="30" placeholder="e.g organize dumbbell rack">
                 </div>
 
                 <div class="col-md-6">
@@ -92,7 +92,7 @@
 
                 <div class="col-md-8">
                     <label for="taskDescription" class="form-label"> description</label>
-                    <input type="text" id="taskDescription" class="form-control" placeholder="Task Details">
+                    <input type="text" id="taskDescription" class="form-control" maxlength="50" placeholder="Task Details">
                 </div>
                 
                 <div class="col-md-4">

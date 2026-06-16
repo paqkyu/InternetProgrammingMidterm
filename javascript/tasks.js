@@ -74,6 +74,15 @@ taskForm.on("submit", function (event) {
     const dueDate = taskdueDate.val();
     const priority = taskPriority.val();
 
+    if(name.length > 30) {
+        alert("Name cannot exceed 30 characters");
+        return;
+    }
+    if(description.length > 50) {
+        alert("Description cannot exceed 50 characters");
+        return;
+    }
+
     if (name==="" || description==="" || dueDate ===""||priority==="") {
         alert("Fill in all fields");
         return;

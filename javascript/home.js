@@ -19,3 +19,4 @@ async function fetchquote() {
     }
 }
 buttonElement.on("click", fetchquote);
+fetchquote();

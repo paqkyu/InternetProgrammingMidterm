@@ -84,3 +84,6 @@ a.btn-primary:focus {
         padding: 0 1rem;
     }
 }
+#programs {
+    scroll-margin-top: 80px;
+}
