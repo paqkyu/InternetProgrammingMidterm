@@ -1,17 +1,18 @@
 <!DOCTYPE HTML>
 <html Lang="EN">
+<head>
     <meta charset = "UTF-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <title>StefGym - About</title>
     <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel = "stylesheet" integrity = "sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin = "anonymous">
     <link href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel = "stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer ></script>
     <link rel = "stylesheet" href = "css/body.css">
     <link rel = "stylesheet" href = "css/navbar.css">
     <link rel= "stylesheet" href="css/about.css">
     <script src = "https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src = "javascript/about.js" defer></script>
-</html>
+</head>
 <body class="stefgym-body">
 <nav class="navbar navbar-expand-lg navbar-dark stef-navbar sticky-top">
             <div class="container">
@@ -44,4 +45,126 @@
                 </div>
             </div>
         </nav>
+<main class ="container py-5">
+    <section class="about-hero text-center mb-5">
+        <p class="eyebrow text-uppercase">About StefGym</p>
+        <h1 class="fw-bold">Built to train clients and Organize Gym Operations</h1>
+        <p class="lead">
+            StefGym is a fictional gym aimed at training clients and offers a task management feature designed to help gym staff manage daily duties, track progress, and keep running operations running smoothly. </p>
+        </p>
+    </section>
+    <section class="about-panel p-4 rounded-4 mb-5">
+        <h2>Our purpose</h2>
+        <p>
+            StefGym's purpose is to make gym management more efficient, organized, and serve clients.
+        </p>
+        <div class="row g-4 mt-3">
+            <div class="col-md-4">
+                <div class="feature-card p-4 rounded-4 h-100">
+                    <i class="bi bi-list-check"></i>
+                    <h5>Task Management</h5>
+                    <p>Create, Edit, delete, filter, and complete gym-related tasks.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card p-4 rounded-4 h-100">
+                    <i class="bi bi-flag-fill"></i>
+                    <h5>Priority Tracking</h5>
+                    <p>Organize tasks by priority levels.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card p-4 rounded-4 h-100">
+                    <i class="bi bi-bar-chart-fill"></i>
+                    <h5>Analytics</h5>
+                    <p>View task summaries and analytics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-5">
+        <div class="text-center mb-4">
+            <h2>Meet Our Team</h2>
+            <p class="muted-text">The people behind StefGym's operations.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="team-card text-center p-4 rounded-4 h-100">
+                    <img src="images/staff1.jpg" alt="Stefanos Paiste" class="team-avatar mb-3">
+                    <h5>Stefanos Paiste</h5>
+                    <p class="team-role">Gym Manager</p>
+                    <p>All around member</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-card text-center p-4 rounded-4 h-100">
+                    <img src="images/staff2.jpg" alt="Stefanos Sejalvo" class="team-avatar mb-3">
+                    <h5>Stefanos Sejalvo</h5>
+                    <p class="team-role">Personal Trainer</p>
+                    <p>Certified Personal Trainer</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-card text-center p-4 rounded-4 h-100">
+                    <img src="images/staff3.jpg" alt="Sejalvo Paiste Stefanos" class="team-avatar mb-3">
+                    <h5>Sejalvo Paiste Stefanos</h5>
+                    <p class="team-role">Coordinator</p>
+                    <p>Coordination</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-panel p-4 rounded-4">
+        <h2 class="text-center mb-4">Meet the team</h2>
+
+        <div id="trainercarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/carousel1.jpg"
+                        class="d-block w-100 trainer-carousel-image"
+                        alt="Stefanos Paiste">
+                    <div class="carousel-caption">
+                        <h4>Stefanos Paiste</h4>
+                        <p>All around member</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel2.jpg"
+                        class="d-block w-100 trainer-carousel-image"
+                        alt="Stefanos Sejalvo">
+
+                    <div class="carousel-caption">
+                        <h4>Stefanos Sejalvo</h4>
+                        <p>Personal Trainer</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/carousel3.jpg"
+                        class="d-block w-100 trainer-carousel-image"
+                        alt="Sejalvo Paiste Stefanos">
+                    
+                    <div class="carousel-caption">
+                        <h4>Sejalvo Paiste Stefanos</h4>
+                        <p>Coordinator</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#trainercarousel"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#trainercarousel"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+</main>
 </body>
