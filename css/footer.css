@@ -1,0 +1,43 @@
+.stef-footer{
+    background: #0b1014;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+.footer-logo{
+    display:flex;
+    align-items: center;
+}
+.footer-brand{
+    font-size: 20px;
+    font-weight: 700;
+    color: #f5f7fa;
+}
+.footer-text{color: #cfd8dc}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.footer-links a{
+    color: #cfd8dc;
+    text-decoration: none;
+}
+.footer-links a:hover{
+    color: #2ec1ac;
+}
+.social-icons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.social-icons a{
+    color: #f5f7fa;
+    font-size: 1.8rem;
+    transition: 0.3s;
+}
+.social-icon a:hover{
+    color: #2ec1ac;
+    transform: translateY(-3px);
+}
+.footer-divider{
+    border-color: rgba(255,255,255,0.08);
+}

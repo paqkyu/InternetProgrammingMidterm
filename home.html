@@ -10,42 +10,13 @@
         <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/body.css">
+        <link rel="stylesheet" href="css/footer.css">
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script src="javascript/home.js" defer></script>
+        <script src="javascript/components.js" defer></script>
     </head>
     <body class="stefgym-body">
-
-        <nav class="navbar navbar-expand-lg navbar-dark stef-navbar sticky-top">
-            <div class="container">
-                <a class="navbar-brand d-flex align-items-center" href="home.html">
-                    <div class="brand-mark">S</div>
-                    <span class="ms-2">StefGym</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navMenu">
-                    <ul class="navbar-nav ms-auto align-items-lg-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tasks.html">Programs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-outline-light rounded-pill ms-lg-3" href="report.html">Report</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <div id="navbar"></div>
 
         <header class="hero-section text-white text-center d-flex align-items-center">
             <div class="container">
@@ -53,7 +24,7 @@
                     <p class="eyebrow text-uppercase mb-3">Train hard. Live strong.</p>
                     <h1 class="display-4 fw-bold mb-4">Welcome to StefGym</h1>
                     <p class="lead mb-4">A modern gym built for strength, endurance, and the motivation you need to reach your next goal.</p>
-                    <a class="btn btn-primary btn-lg me-2" href="#programs">Explore Programs</a>
+                    <a class="btn btn-primary btn-lg me-2" href="tasks.html">Explore Programs</a>
                     <a class="btn btn-outline-light btn-lg" href="report.html">Report</a>
                 </div>
             </div>
@@ -155,15 +126,10 @@
             <div class="container">
                 <h2>Ready to level up?</h2>
                 <p class="mb-4">Join StefGym and take your training to the next level with expert support and a strong community.</p>
-                <a class="btn btn-primary btn-lg" href="#contact">Book a free intro</a>
+                <a class="btn btn-primary btn-lg" href="contact.html">Book a free intro</a>
             </div>
         </section>
 
-        <footer class="footer py-4" id="contact">
-            <div class="container text-center text-muted">
-                <p class="mb-1">StefGym • Fitness studio for strength, endurance, and wellness</p>
-                <p class="small mb-0">&copy; 2026 StefGym</p>
-            </div>
-        </footer>
+        <div id="footer"></div>
     </body>
 </html>
