@@ -10,9 +10,179 @@
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/body.css">
         <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/lightmode.css">
+        <link rel="stylesheet" href="css/report.css">
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-        <script src="javascript/home.js" defer></script>
         <script src="javascript/components.js" defer></script>
     </head>
     <body class="stefgym-body">
         <div id="navbar"></div>
+        <main class="container py-5">
+            <section class="report-hero text-center mb-5">
+                <p class="report-eyebrow text-uppercase">
+                    Project Report
+                </p>
+                <h1 class="fw-bold">
+                    StefGym Website Report
+                </h1>
+                <p class="lead">
+                    Documentation of StefGym, its coding decisions and my personal reflections.
+                </p>
+                </section>
+                <section class="report-panel p-4 rounded-4 mb-5">
+                    <div class="section-heading mb-4">
+                        <span class="section-icon">
+                            <i class="bi bi-list-check"></i>
+                        </span>
+                        <div>
+                            <h2>Task Allocation System</h2>
+                            <p class="section-description mb-0">
+                                How tasks are created, stored, managed and displayed.
+                            </p>
+                        </div>
+                    </div>
+                    <p> The StefGym is a website that allows users to create and manage their tasks.</p>
+                    <p>Each task must contain a name,description, due date, and a priority level. After being added a task has a status of completed or pending.
+                        Users can also edit, delete, filter, complete, and sort tasks. Tasks are stored in localStorage so it remains available even after the page is refreshed.
+                    </p>
+                    <div class="row g-4 mt-2">
+                        <div class="col-md-4">
+                            <article class="system-card h-100">
+                                <i class="bi bi-plus-circle"></i>
+                                <h4>Task Creation</h4>
+                                <p>Users can enter a task name, description, due date, and priority using the task form. Task name and decription have character constraints, these are also backed by a javascript function so that DOM manipulation cannot be done.</p>
+                            </article>
+                        </div>
+                        <div class="col-md-4">
+                            <article class="system-card h-100">
+                                <i class="bi bi-database-check"></i>
+                                <h4>Data Persistence</h4>
+                                <p>
+                                    localStorage saves the tasks array as a JSON and restores it whenever the page is opened.
+                                </p>
+                            </article>
+                        </div>
+                    </section>
+                        
+                    <section class="report-panel p-4 rounded-4 mb-5">
+                            <div class="section-heading mb-4">
+                                <span class="section-icon">
+                                    <i class="bi bi-code-slash"></i>
+                                </span>
+                                <div>
+                                    <h2>Coding Decisions</h2>
+                                    <p class="section-description mb-0">
+                                        Documentation of the tasks page, and About page.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <article class="decision-card h-100">
+                                        <i class="bi bi-card-checklist"></i>
+                                        <h3>Tasks Page</h3>
+                                        <p>Jquery was selected for form event handling, reading input values, generating table rows, and updating the task summary dynamically.</p>
+                                        <p>The task data is held in a javascript array and saved using localStorage.</p>
+                                        <p>Filtering and sorting were implemented using temporary copies of the task array, allowing users to sort tasks without changing the originally stored data.</p>
+                                        <ul>
+                                            <li>jQuery form and button event handling</li>
+                                            <li>LocalStorage and task persistence</li>
+                                            <li>Task creation, editing, deletion, and completion</li>
+                                            <li>Status and priority filtering</li>
+                                            <li>Task analytics</li>
+                                            <li>HTML and javascript validation</li>
+                                        </ul>
+                                    </article>
+                                </div>
+                                
+                                <div class="col-lg-6">
+                                    <article class="decision-card h-100">
+                                        <i class="bi bi-people-fill"></i>
+                                        <h3>About page</h3>
+                                        <p>
+                                            The about page was created to showcase the "team members". Boostrap cards were used to display the staff photographs, names, and roles.
+                                        </p>
+                                            <p>The boostrap cards allow the staff cards to adapt to all devices and their screen resolutions. A bootstrap carousel is also implemented to introduce staff.
+                                        </p>
+                                        <p>
+                                            jquery adds interactive effects to the staff cards when the user hovers over them.
+                                        </p>
+                                        <ul>
+                                            <li>Responsive Grid</li>
+                                            <li>Staff cards</li>
+                                            <li>Image carousel</li>
+                                            <li>jQuery hover events</li>
+                                        </ul>
+                                    </article>
+                                </div>
+                            
+                            </div>
+                        </section>
+
+                        <section class="report-panel p-4 rounded-4 mb-5">
+                            <div class="section-heading mb-4">
+                                <span class="section-icon">
+                                    <i class="bi bi-github"></i>
+                                </span>
+                                <div>
+                                    <h2>Github Repository</h2>
+                                    <p class="section-description mb-04">
+                                        The github repository for the project
+                                    </p>
+                                </div>
+                            </div>
+                            <p>Git and github were used to manage the different versions of the project</p>
+                            <a href="https://github.com/paqkyu/InternetProgrammingMidterm"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-primary rounded-pill px-4">
+                            <i class="bi bi-github me-2"></i>
+                            View Repository
+                        </a>
+                        </section>
+                        
+                        <section class="report-panel p-4 rounded-4 mb-5">
+                            <div class="section-heading mb-4">
+                                <span class="section-icon">
+                                    <i class="bi bi-lightbulb-fill"></i>
+                                </span>
+                                <div>
+                                    <h2>Personal reflections</h2>
+                                    <p class="section-description mb-0">
+                                        Challenges and how they were addressed.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <article class="reflection-card h-100">
+                                        <h3>Responsive layout</h3>
+                                        <p>One of the main challenges was trying to create a responsive layout. Bootstrap was used to create the responsive layout, and media queries were used to cater to smaller devices</p>
+                                    </article>
+                                </div>
+                                <div class="col-md-6">
+                                    <article class="reflection-card h-100">
+                                        <h3>Task Persistence</h3>
+                                        <p>Tasks disappeared when refreshed. Fixed this by using localStorage and JSON</p>
+                                    </article>
+                                </div>
+                                <div class="col-md-6">
+                                    <article class="reflection-card h-100">
+                                        <h3>Overall Learning</h3>
+                                        <p>This project gave me an understanding of how HTML, CSS, Boostrap, Javascript, and Jquery work together to create a responsive and interactive layout</p>
+                                        <p class="mb-0">
+                                            Youtube tutorials, documentation, and AI explanations helped me understand things I did not understand or was not familiar with. Of course I also personally tested and adjusted what throughout the development process
+                                        </p>
+                                    </article>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <div id="footer"></div>
+    </body>
+    </html>

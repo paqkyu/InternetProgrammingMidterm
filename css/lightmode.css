@@ -1,0 +1,65 @@
+body.light-mode{
+    background: #f8f9fa;
+    color: #212529;
+}
+body.light-mode .stef-navbar{
+    background: #ffffff;
+    border-button: 1px solid #dee2e6;
+}
+body.light-mode .navbar-dark .navbar-nav .nav-link,
+body.light-mode .navbar-dark .navbar-brand{
+    color: #212529
+}
+body.light-mode .navbar-dark .navbar-nav .nav-link:hover,
+body.light-mode .navbar-dark .navbar-nav .nav-link:active{
+    color: #2ec1ac;
+}
+body.light-mode .btn-outline-light{
+    color: #212529;
+    border-color: #212529
+}
+body.light-mode .task-panel,
+body.light-mode .task-summary-card,
+body.light-mode .about-panel,
+body.light-mode .team-card,
+body.light-mode .feature-card,
+body.light-mode .contact-panel,
+body.light-mode .stef-footer{
+    background: #ffffff;
+    color: #212529;
+    border-color: #dee2e6;
+}
+body.light-mode .form-control,
+body.light-mode .form-select{
+    background-color: #ffffff;
+    color: #212529;
+    border-color: #ced4da;
+}
+body.light-mode .form-control::placeholder{
+    color: #6c757d;
+}
+body.light-mode .muted-text,
+body.light-mode .footer-text{
+    color: #6c757d;
+}
+body.light-mode .hero-section{
+    background: linear-gradient(
+        180deg,
+        rgba(255,255,255,0.35) 0%,
+        rgba(255,255,255,0.45) 100%
+    ),
+    url(../images/Heroimg.jpg) center/cover no-repeat;
+    color: #111;
+}
+body.light-mode .hero-section h1,
+body.light-mode .hero-section .lead{
+    color: #111;
+}
+body.light-mode .quote-selection{
+    background: #e9ecef !important;
+    color: #212529;
+}
+body.light-mode .cta-section{
+    background: linear-gradient(135deg,#e9ecef 0%, #f8f9fa 100%);
+    color: #212529;
+}

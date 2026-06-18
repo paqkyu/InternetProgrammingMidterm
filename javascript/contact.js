@@ -1,7 +1,8 @@
 $(document).ready(function (){
     $("#contactForm").on("submit", function (event) {
-        event.preventDefault();
+        event.preventDefault(); //Prevents the page from refreshing after form is submitted
 
+        //receive and trim input values
         const name=$("#contactName").val().trim();
         const email=$("#contactEmail").val().trim();
         const message=$("#contactMessage").val().trim();
@@ -25,7 +26,8 @@ $(document).ready(function (){
         }
 
         $("#confirmationText").html(`Thank you, <strong> ${name}</strong> for your message.`);
-
+    
+        //Creates and displays the pop up
     const modal =new bootstrap.Modal($("#confirmationModal"));
     modal.show();
 

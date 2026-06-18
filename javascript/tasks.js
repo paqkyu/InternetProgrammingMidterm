@@ -1,6 +1,6 @@
-//stores the tasks in memory so they stay when page is refreshed
+//Stores tasks in localStorage. If no tasks exist, creates an empty array
 let tasks = JSON.parse(localStorage.getItem("stefGymTasks")) || [];
-let editIndex = null;
+let editIndex = null; //tracks which task is being edited
 const taskForm = $("#taskForm");
 const taskName = $("#taskName");
 const taskDescription = $("#taskDescription");
@@ -8,17 +8,20 @@ const taskdueDate = $("#taskdueDate");
 const taskPriority = $("#taskPriority");
 const taskTableBody = $("#taskTableBody");
 
+//Function that saves the current tasks array to localStorage
 function saveTasks() {
     localStorage.setItem("stefGymTasks", JSON.stringify(tasks));
 }
+//updates the task summary counters
 function updateSummary() {
     $("#totalTasks").text(tasks.length);
     $("#completedTasks").text(tasks.filter(task=>task.status === "Completed").length);
     $("#pendingTasks").text(tasks.filter(task=>task.status === "Pending").length);
 }
+//Renders the tasks in the table based on selected filters and sorting options;
 function renderTasks() {
-    taskTableBody.empty();
-
+    taskTableBody.empty(); //clearing the table before rebuilding
+    //Filter and sort selections
     let statusFilter =$("#statusFilter").val();
     let priorityFilter =$("#priorityFilter").val();
     let sortOption =$("#sortTasks").val();
@@ -43,6 +46,7 @@ function renderTasks() {
         const priorityClass = task.priority.toLowerCase();
         const statusClass = task.status.toLowerCase();
 
+        //Creates new table row (<tr>) for every task and adds it to the table
         taskTableBody.append(`
             <tr>
                 <td>${task.name}</td>
@@ -65,7 +69,9 @@ function renderTasks() {
                 `);
     });
     updateSummary();
+    updateCharts();
 }
+//function that enforces character constraints
 taskForm.on("submit", function (event) {
     event.preventDefault()
 
@@ -138,3 +144,45 @@ $("#statusFilter, #priorityFilter, #sortTasks").on("change", renderTasks);
 $(document).ready(function () {
     renderTasks();
 });
+let statusChart;
+let priorityChart;
+
+function updateCharts(){
+    //new arrays based on status and priority
+    const completed = tasks.filter(task=>task.status ==="Completed").length;
+    const pending = tasks.filter(task=>task.status ==="Pending").length;
+
+    const high = tasks.filter(task=>task.priority ==="High").length;
+    const medium = tasks.filter(task=>task.priority ==="Medium").length;
+    const low = tasks.filter(task=>task.priority ==="Low").length;
+
+    //checks if chart exists and if it does it deletes it. This is done because otherwise, charts would render on top of one another
+    if (statusChart) {
+        statusChart.destroy();
+    }
+    if (priorityChart){
+        priorityChart.destroy();
+    }
+    //creates new chart. [0] is used because it $ returns a jquery object.
+    statusChart = new Chart($("#statusChart")[0], {
+        type: "bar",
+        data: {
+            labels: ["Completed", "Pending"],
+            datasets: [{
+                label: "Tasks",
+                data: [completed, pending],
+                backgroundColor: ["#2ec1ac", "#ffc107"]
+            }]
+        }
+    });
+    priorityChart = new Chart($("#priorityChart")[0], {
+        type: "pie",
+        data: {
+            labels: ["High", "Medium", "Low"], //slices of the pie
+            datasets: [{
+                data: [high, medium, low],
+                backgroundColor: ["#dc3545", "#ffc107", "#198754"]
+            }]
+        }
+    });
+};

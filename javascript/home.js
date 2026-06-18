@@ -1,7 +1,8 @@
 const quoteElement = $("#quote");
 const authorElement = $("#author");
 const buttonElement = $("#new-quote");
-
+//Retrieves a random quote from an external API displays the quote and author.
+//ASYNC- waits for data from somewhere else (API)
 async function fetchquote() {
     const url = "https://dummyjson.com/quotes/random";
     try {
@@ -18,5 +19,5 @@ async function fetchquote() {
         console.error("Error fetching quote:", error);
     }
 }
-buttonElement.on("click", fetchquote);
-fetchquote();
+buttonElement.on("click", fetchquote); //fetches new quote when button is clicked
+fetchquote(); //loads the initial quote
